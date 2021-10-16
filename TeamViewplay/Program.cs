@@ -41,7 +41,7 @@ namespace TeamViewplay
                 {
                     StringBuilder stringBuilder2 = new StringBuilder(1024);
                     SendMessage(GetPtr, WM_GETTEXT, 1024, stringBuilder2);
-                    Console.WriteLine(stringBuilder2.ToString().TrimEnd('\r', '\n'));
+                    Console.WriteLine(stringBuilder2);
                 }
                 Getwidows(GetPtr);
                 IntPtr  temp = GetWindow(GetPtr, GetWindowCmd.GW_HWNDNEXT);
